@@ -1,1 +1,15 @@
 @use '../abstracts/' as *;
+
+.head-text {
+	font-size: 2.25rem; // min 1.25rem
+	font-family: var(--ff-heading);
+	font-weight: var(--fw-medium);
+	color: var(--clr-neutral-100);
+}
+
+.body-text {
+	font-family: var(--ff-body);
+	color: var(--clr-neutral-100);
+	width: min(60ch, 100% - 1rem);
+	margin-inline: auto;
+}

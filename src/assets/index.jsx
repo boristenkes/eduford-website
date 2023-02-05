@@ -31,7 +31,7 @@ export const banners = {
 	courses: graduation,
 };
 
-export const facilities = {
+export const facilityImages = {
 	library: library,
 	basketball: basketball,
 	cafeteria: cafeteria,

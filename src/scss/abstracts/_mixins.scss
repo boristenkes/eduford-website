@@ -1,20 +1,24 @@
 @use './breakpoints' as *;
 
-@mixin mq($width, $type: min) {
-	@if map_has_key($breakpoints, $width) {
-		$width: map_get($breakpoints, $width);
+@mixin mq($query, $type: min) {
+	@if map_has_key($breakpoints, $query) {
+		$query: map_get($breakpoints, $query);
 		@if ($type == min) {
-			$width: $width + 1px;
+			$query: $query + 1px;
 		}
-		@media only screen and (#{$type}-width: $width) {
+		@media only screen and (#{$type}-width: $query) {
 			@content;
 		}
-	} @else if $width == landscape or $width == portrait {
-		@media only screen and (orientation: $width) {
+	} @else if $query == landscape or $query == portrait {
+		@media only screen and (orientation: $query) {
+			@content;
+		}
+	} @else if $query == dark or $query == light {
+		@media (prefers-color-scheme: $query) {
 			@content;
 		}
 	} @else {
-		@error "Unknown width: #{$width}";
+		@error "Unknown query: #{$query}";
 	}
 }
 
@@ -57,7 +61,7 @@
 	}
 
 	&::#{$pseudo} {
-		content: #{$content};
+		content: $content;
 		position: #{$position};
 		@content;
 	}

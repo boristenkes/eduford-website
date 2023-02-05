@@ -1,0 +1,79 @@
+@use '../../scss/abstracts/' as *;
+
+.navbar {
+	@include flex(space-between, center);
+	padding: 2.5rem min(8rem, 10vw);
+	position: absolute;
+	width: 100%;
+
+	&-logo {
+		width: 100%;
+
+		&-wrapper {
+			width: fit-content;
+			@include mq('phone') {
+				width: 200px;
+			}
+		}
+		&-icon {
+			width: 65px;
+		}
+	}
+	.hamburger-react {
+		z-index: 101 !important;
+	}
+
+	&-nav {
+		z-index: 100;
+		ul {
+			gap: 2rem;
+			font-family: var(--ff-nav);
+			text-transform: uppercase;
+		}
+		a {
+			color: var(--clr-neutral-100);
+			font-weight: var(--fw-medium);
+			font-size: 1.15rem;
+		}
+
+		&.desktop {
+			ul {
+				@include flex(center, center);
+			}
+		}
+		&.mobile {
+			transform: translateX(100%);
+			transition: transform 0.5s ease-in-out;
+
+			&.active {
+				transform: translateX(0);
+			}
+			ul {
+				@include flex(center, flex-start, column);
+			}
+			position: fixed;
+			top: 0;
+			right: 0;
+			background: var(--clr-primary-500);
+			height: 100vh;
+			padding: min(8rem, 15vh) 5rem 0;
+		}
+	}
+
+	&-item {
+		@include pseudo(after, $position: static) {
+			display: block;
+			height: 3px;
+			margin-inline: auto;
+			width: 0;
+			background: var(--clr-primary-500);
+			transition: width 0.25s ease-in-out;
+		}
+		&:hover,
+		&.active {
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+}

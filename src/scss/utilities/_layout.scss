@@ -1,9 +1,8 @@
 @use '../abstracts/' as *;
 
 .container {
-	max-width: var(--container-width, 1300px);
+	width: min(100% - 1.5rem, var(--container-width, 1300px));
 	margin-inline: auto;
-	padding-inline: 1.5rem;
 }
 
 .even-columns {
@@ -17,5 +16,5 @@
 }
 
 .section-padding {
-	padding-block: var(--padding, 5rem); // might be 3rem
+	padding-block: var(--padding, 5rem);
 }

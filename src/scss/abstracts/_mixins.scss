@@ -1,0 +1,87 @@
+@use './breakpoints' as *;
+
+@mixin mq($width, $type: min) {
+	@if map_has_key($breakpoints, $width) {
+		$width: map_get($breakpoints, $width);
+		@if ($type == min) {
+			$width: $width + 1px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	} @else if $width == landscape or $width == portrait {
+		@media only screen and (orientation: $width) {
+			@content;
+		}
+	} @else {
+		@error "Unknown width: #{$width}";
+	}
+}
+
+@mixin flex($justify: null, $align: null, $direction: null) {
+	display: flex;
+
+	@if $justify != null {
+		justify-content: $justify;
+	}
+	@if $align != null {
+		align-items: $align;
+	}
+	@if $direction != null {
+		flex-direction: $direction;
+	}
+}
+
+@mixin separate-children($space: 1rem, $direction: vertical) {
+	& > *:not(:last-child) {
+		@if $direction == vertical {
+			margin-bottom: $space;
+		} @else if $direction == horizontal {
+			margin-right: $space;
+		} @else if $direction == both {
+			margin-bottom: $space;
+			margin-right: $space;
+		}
+	}
+}
+
+@mixin responsive-grid($width: 300px, $gap: 1rem) {
+	display: grid;
+	gap: $gap;
+	grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
+}
+
+@mixin pseudo($pseudo: before, $content: '', $position: absolute) {
+	@if $position == absolute {
+		position: relative;
+	}
+
+	&::#{$pseudo} {
+		content: #{$content};
+		position: #{$position};
+		@content;
+	}
+}
+
+@mixin triangle($direction: right, $size: 20px, $color: #555) {
+	width: 0;
+	height: 0;
+
+	@if $direction == up {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $size solid $color;
+	} @else if $direction == right {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+	} @else if $direction == down {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+	} @else if $direction == left {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-right: $size solid $color;
+	}
+}

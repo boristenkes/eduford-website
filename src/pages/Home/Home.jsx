@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.scss';
 
 import { Button } from '../../components';
+import { Courses } from '../../containers';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -19,6 +20,8 @@ export default function Home() {
 					</Link>
 				</div>
 			</header>
+
+			<Courses />
 		</>
 	);
 }

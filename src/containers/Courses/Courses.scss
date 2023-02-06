@@ -1,0 +1,39 @@
+@use '../../scss/abstracts/' as *;
+
+.courses {
+	@include separate-children(6rem);
+	&-title {
+		margin-bottom: 1rem;
+	}
+	&-subtitle {
+		margin-bottom: 3rem;
+	}
+}
+
+.course {
+	@include separate-children();
+	background: var(--clr-primary-100);
+	text-align: center;
+	padding: 2rem 1.25rem;
+	border-radius: 0.5rem;
+	transition: box-shadow, transform, 0.25s ease-in-out;
+	cursor: default;
+	width: min(450px, 100%);
+
+	&:hover {
+		transform: scale(1.03);
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+			rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	}
+
+	&-list {
+		@include flex(center, center, $wrap: wrap);
+		gap: 2rem;
+	}
+
+	&-title {
+		font-weight: var(--fw-semibold);
+		font-size: 1.2rem;
+		font-family: var(--ff-heading);
+	}
+}

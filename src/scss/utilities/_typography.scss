@@ -3,13 +3,14 @@
 .head-text {
 	font-size: 2.25rem; // min 1.25rem
 	font-family: var(--ff-heading);
-	font-weight: var(--fw-medium);
-	color: var(--clr-neutral-100);
+	font-weight: var(--fw-semibold);
+	color: var(--clr-neutral-900);
+	text-align: center;
 }
 
 .body-text {
 	font-family: var(--ff-body);
-	color: var(--clr-neutral-100);
+	color: var(--clr-neutral-500);
 	width: min(60ch, 100% - 1rem);
 	margin-inline: auto;
 }

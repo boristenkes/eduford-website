@@ -12,6 +12,10 @@
 	.hero &-title {
 		font-size: clamp(2.25rem, 5vw, 4.5rem); // 3.875rem
 		font-weight: var(--fw-semibold);
+		color: var(--clr-neutral-100);
+	}
+	.hero &-description {
+		color: var(--clr-neutral-100);
 	}
 	&-wrapper {
 		@include separate-children(2rem);

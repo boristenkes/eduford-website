@@ -22,7 +22,7 @@
 	}
 }
 
-@mixin flex($justify: null, $align: null, $direction: null) {
+@mixin flex($justify: null, $align: null, $direction: null, $wrap: null) {
 	display: flex;
 
 	@if $justify != null {
@@ -33,6 +33,9 @@
 	}
 	@if $direction != null {
 		flex-direction: $direction;
+	}
+	@if $wrap != null {
+		flex-wrap: wrap;
 	}
 }
 

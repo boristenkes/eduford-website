@@ -27,15 +27,15 @@ export const navLinks = [
 export const courses = [
 	{
 		title: 'Intermediate',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque cum odio amet dicta accusamus suscipit autem placeat, voluptatibus voluptate accusantium vitae animi aliquid et libero eos rerum nam sapiente?',
+		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut ducimus natus saepe recusandae fugit eaque ex sapiente a, vitae, eligendi quasi assumenda obcaecati magnam voluptate.',
 	},
 	{
 		title: 'Degree',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque cum odio amet dicta accusamus suscipit autem placeat, voluptatibus voluptate accusantium vitae animi aliquid et libero eos rerum nam sapiente?',
+		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut ducimus natus saepe recusandae fugit eaque ex sapiente a, vitae, eligendi quasi assumenda obcaecati magnam voluptate.',
 	},
 	{
 		title: 'Post Graduation',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque cum odio amet dicta accusamus suscipit autem placeat, voluptatibus voluptate accusantium vitae animi aliquid et libero eos rerum nam sapiente?',
+		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut ducimus natus saepe recusandae fugit eaque ex sapiente a, vitae, eligendi quasi assumenda obcaecati magnam voluptate.',
 	},
 ];
 

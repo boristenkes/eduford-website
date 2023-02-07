@@ -7,11 +7,10 @@ export default function Courses() {
 	return (
 		<section className='courses container section-padding'>
 			<div>
-				<h1 className='head-text | courses-title'>Courses We Offer</h1>
-				<p
-					className='body-text | courses-subtitle'
-					style={{ textAlign: 'center' }}
-				>
+				<h1 className='courses-title | head-text section-title'>
+					Courses We Offer
+				</h1>
+				<p className='courses-subtitle | body-text section-subtitle text-center mx-auto'>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>
 			</div>

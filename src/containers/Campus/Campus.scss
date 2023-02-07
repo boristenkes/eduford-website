@@ -1,0 +1,47 @@
+@use '../../scss/abstracts/' as *;
+
+.campus {
+	&-list {
+		@include flex(center, center, $wrap: wrap);
+		gap: 2rem;
+		position: relative;
+		margin-top: 6rem;
+	}
+	&-location {
+		font-size: 1.75rem;
+		font-family: var(--ff-heading);
+		font-weight: var(--ff-medium);
+		text-transform: uppercase;
+		z-index: 10;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		color: var(--clr-neutral-100);
+		opacity: 0;
+		transition: opacity, bottom, 0.45s ease-in-out;
+		cursor: default;
+	}
+	&-item {
+		width: min(400px, 100%);
+		height: min(600px, 70vh);
+		border-radius: 0.5rem;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+
+		@include pseudo() {
+			inset: 0;
+			background: var(--clr-primary-600);
+			opacity: 0;
+			transition: 0.45s ease-in-out;
+		}
+		&:hover::before {
+			opacity: 0.7;
+		}
+		&:hover .campus-location {
+			opacity: 1;
+			bottom: 50%;
+		}
+	}
+}

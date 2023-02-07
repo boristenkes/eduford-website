@@ -2,12 +2,6 @@
 
 .courses {
 	@include separate-children(6rem);
-	&-title {
-		margin-bottom: 1rem;
-	}
-	&-subtitle {
-		margin-bottom: 3rem;
-	}
 }
 
 .course {

@@ -12,5 +12,16 @@
 	font-family: var(--ff-body);
 	color: var(--clr-neutral-500);
 	width: min(60ch, 100% - 1rem);
-	margin-inline: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.section-title {
+	margin-bottom: 1rem;
+}
+
+.section-subtitle {
+	margin-bottom: 3rem;
 }

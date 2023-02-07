@@ -16,6 +16,7 @@
 	}
 	.hero &-description {
 		color: var(--clr-neutral-100);
+		margin-inline: auto;
 	}
 	&-wrapper {
 		@include separate-children(2rem);

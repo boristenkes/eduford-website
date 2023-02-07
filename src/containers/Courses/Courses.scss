@@ -1,9 +1,5 @@
 @use '../../scss/abstracts/' as *;
 
-.courses {
-	@include separate-children(6rem);
-}
-
 .course {
 	@include separate-children();
 	background: var(--clr-primary-100);

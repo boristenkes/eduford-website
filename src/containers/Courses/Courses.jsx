@@ -7,10 +7,8 @@ export default function Courses() {
 	return (
 		<section className='courses container section-padding'>
 			<div>
-				<h1 className='courses-title | head-text section-title'>
-					Courses We Offer
-				</h1>
-				<p className='courses-subtitle | body-text section-subtitle text-center mx-auto'>
+				<h1 className='courses-title | section-title'>Courses We Offer</h1>
+				<p className='courses-subtitle | section-subtitle'>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>
 			</div>

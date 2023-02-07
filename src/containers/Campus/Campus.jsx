@@ -7,8 +7,8 @@ export default function Campus() {
 	return (
 		<section className='campus | section-padding container'>
 			<div>
-				<h1 className='head-text section-title'>Our Global Campus</h1>
-				<p className='body-text text-center mx-auto section-subtitle'>
+				<h1 className='section-title'>Our Global Campus</h1>
+				<p className='section-subtitle'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</p>
 

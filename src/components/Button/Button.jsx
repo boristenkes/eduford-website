@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
 	font-size: 1rem;
@@ -17,6 +17,13 @@ const Button = styled.button`
 		color: var(--clr-neutral-100);
 		border-color: var(--clr-primary-500);
 	}
+
+	${props =>
+		props.reversed &&
+		css`
+			color: var(--clr-primary-500);
+			border-color: var(--clr-primary-500);
+		`}
 `;
 
 export default Button;

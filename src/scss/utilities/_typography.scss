@@ -28,7 +28,7 @@
 	font-family: var(--ff-body);
 	font-size: 1rem;
 	color: var(--clr-neutral-500);
-	width: min(60ch, 100% - 1rem);
+	width: min(var(--max-width, 60ch), 100% - 1rem);
 	text-align: center;
 	margin-inline: auto;
 	margin-bottom: 6rem;

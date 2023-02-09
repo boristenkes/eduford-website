@@ -1,4 +1,10 @@
 import { campus, facilityImages, avatars } from '../assets';
+import {
+	FaFacebookF,
+	FaInstagram,
+	FaLinkedinIn,
+	FaTwitter,
+} from 'react-icons/fa';
 import { FaHome, FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
 
 export const navLinks = [
@@ -138,5 +144,24 @@ export const contactInfo = [
 		icon: <FaRegEnvelope />,
 		main: 'info@eduford.com',
 		sub: 'Email us your query',
+	},
+];
+
+export const socialsIcons = [
+	{
+		link: 'https://www.facebook.com/',
+		icon: <FaFacebookF />,
+	},
+	{
+		link: 'https://www.twitter.com/',
+		icon: <FaTwitter />,
+	},
+	{
+		link: 'https://www.instagram.com/',
+		icon: <FaInstagram />,
+	},
+	{
+		link: 'https://www.linkedin.com/',
+		icon: <FaLinkedinIn />,
 	},
 ];

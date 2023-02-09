@@ -1,0 +1,11 @@
+@use '../../scss/abstracts/' as *;
+
+.about {
+	@include separate-children(2.5rem);
+	h2 {
+		text-align: left;
+	}
+	div {
+		@include separate-children(2.5rem);
+	}
+}

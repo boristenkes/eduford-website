@@ -6,11 +6,11 @@
 		gap: 2rem;
 	}
 	&-item {
-		width: min(400px, 100%);
+		width: min(25rem, 100%);
 		@include separate-children();
 
 		.img-wrapper {
-			height: 350px;
+			height: 21.875rem;
 			overflow: hidden;
 			border-radius: 0.5rem;
 

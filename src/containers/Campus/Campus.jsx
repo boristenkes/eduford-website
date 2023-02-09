@@ -7,7 +7,7 @@ export default function Campus() {
 	return (
 		<section className='campus | section-padding container'>
 			<div>
-				<h1 className='section-title'>Our Global Campus</h1>
+				<h2 className='section-title'>Our Global Campus</h2>
 				<p className='section-subtitle'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</p>
@@ -19,7 +19,7 @@ export default function Campus() {
 							style={{ backgroundImage: `url("${campus.image}")` }}
 							className='campus-item'
 						>
-							<h2 className='campus-location'>{campus.location}</h2>
+							<h3 className='campus-location'>{campus.location}</h3>
 						</li>
 					))}
 				</ul>

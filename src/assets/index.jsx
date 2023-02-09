@@ -10,8 +10,8 @@ import logo from './logo.png';
 import london from './london.png';
 import newyork from './newyork.png';
 import washington from './washington.png';
-import avatar1 from './avatar1.jpg';
-import avatar2 from './avatar2.jpg';
+import christine from './avatar-christine.jpg';
+import david from './avatar-david.jpg';
 
 export const campus = {
 	london: london,
@@ -20,8 +20,8 @@ export const campus = {
 };
 
 export const avatars = {
-	avatar1: avatar1,
-	avatar2: avatar2,
+	christine: christine,
+	david: david,
 };
 
 export const banners = {

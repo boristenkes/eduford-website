@@ -4,6 +4,7 @@ import './Home.scss';
 import { Button } from '../../components';
 import { Courses, Campus, Facilities, Testimonials } from '../../containers';
 import { Link } from 'react-router-dom';
+import CTA from '../../components/CTA/CTA';
 
 export default function Home() {
 	return (
@@ -25,6 +26,7 @@ export default function Home() {
 			<Campus />
 			<Facilities />
 			<Testimonials />
+			<CTA />
 		</>
 	);
 }

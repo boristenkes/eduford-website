@@ -4,9 +4,10 @@ const Button = styled.button`
 	font-size: 1rem;
 	font-family: var(--ff-button);
 	border: 1px solid var(--clr-neutral-100);
-	background: transparent;
+	border-radius: 0.25rem;
 	padding: 1rem 2rem;
 	color: var(--clr-neutral-100);
+	background: transparent;
 	transition: background, color, 0.25s ease-in-out;
 	cursor: pointer;
 	display: block;

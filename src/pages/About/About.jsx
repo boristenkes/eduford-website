@@ -28,7 +28,7 @@ export default function About() {
 						quidem, assumenda exercitationem doloribus distinctio hic incidunt
 						dolores non, id quis?
 					</p>
-					<Button reversed>Explore Now</Button>
+					<Button inverted>Explore Now</Button>
 				</div>
 				<div>
 					<img src={meeting} alt='Meeting' />

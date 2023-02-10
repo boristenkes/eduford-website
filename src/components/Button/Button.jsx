@@ -19,7 +19,7 @@ const Button = styled.button`
 	}
 
 	${props =>
-		props.reversed &&
+		props.inverted &&
 		css`
 			color: var(--clr-primary-500);
 			border-color: var(--clr-primary-500);

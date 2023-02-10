@@ -29,6 +29,7 @@ export const banners = {
 	contact: graduation,
 	about: graduation,
 	courses: graduation,
+	blog: graduation,
 };
 
 export const facilityImages = {

@@ -151,17 +151,21 @@ export const socialsIcons = [
 	{
 		link: 'https://www.facebook.com/',
 		icon: <FaFacebookF />,
+		label: 'Facebook',
 	},
 	{
 		link: 'https://www.twitter.com/',
 		icon: <FaTwitter />,
+		label: 'Twitter',
 	},
 	{
 		link: 'https://www.instagram.com/',
 		icon: <FaInstagram />,
+		label: 'Instagram',
 	},
 	{
 		link: 'https://www.linkedin.com/',
 		icon: <FaLinkedinIn />,
+		label: 'Linkedin',
 	},
 ];

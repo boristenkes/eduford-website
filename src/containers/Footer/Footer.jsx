@@ -16,7 +16,9 @@ export default function Footer({ ...props }) {
 				<ul className='social-icons'>
 					{socialsIcons.map((icon, index) => (
 						<li key={`social-icon-${index + 1}`}>
-							<a href={icon.link}>{icon.icon}</a>
+							<a href={icon.link} aria-label={icon.label}>
+								{icon.icon}
+							</a>
 						</li>
 					))}
 				</ul>

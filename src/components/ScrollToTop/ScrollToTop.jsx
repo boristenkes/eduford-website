@@ -16,6 +16,7 @@ export default function ScrollToTop() {
 		<button
 			onClick={() => window.scrollTo({ top: 0 })}
 			className={`scroll-to-top ${scrollPosition > 750 ? 'active' : ''}`}
+			aria-label='Scroll To Top'
 		>
 			<FaAngleUp />
 		</button>

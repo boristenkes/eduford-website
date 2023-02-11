@@ -54,8 +54,6 @@ export default function Contact() {
 					</Button>
 				</div>
 			</section>
-
-			<Footer />
 		</>
 	);
 }

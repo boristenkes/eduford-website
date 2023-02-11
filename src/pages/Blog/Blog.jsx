@@ -100,8 +100,6 @@ export default function Blog() {
 					</ul>
 				</div>
 			</section>
-
-			<Footer />
 		</>
 	);
 }

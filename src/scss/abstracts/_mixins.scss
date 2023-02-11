@@ -1,12 +1,12 @@
 @use './breakpoints' as *;
 
-@mixin mq($query, $type: min) {
+@mixin mq($query, $width-type: min) {
 	@if map_has_key($breakpoints, $query) {
 		$query: map_get($breakpoints, $query);
-		@if ($type == min) {
+		@if ($width-type == min) {
 			$query: $query + 1px;
 		}
-		@media only screen and (#{$type}-width: $query) {
+		@media only screen and (#{$width-type}-width: $query) {
 			@content;
 		}
 	} @else if $query == landscape or $query == portrait {
@@ -35,7 +35,7 @@
 		flex-direction: $direction;
 	}
 	@if $wrap != null {
-		flex-wrap: wrap;
+		flex-wrap: $wrap;
 	}
 }
 
@@ -90,5 +90,26 @@
 		border-top: $size solid transparent;
 		border-bottom: $size solid transparent;
 		border-right: $size solid $color;
+	}
+}
+
+@mixin bg-img(
+	$image-src,
+	$size: cover,
+	$position: center,
+	$repeat: no-repeat,
+	$attachment: null,
+	$gradient: null
+) {
+	@if $gradient != null {
+		background-image: $gradient, url(#{$image-src});
+	} @else {
+		background-image: url(#{$image-src});
+	}
+	background-size: $size;
+	background-position: $position;
+	background-repeat: $repeat;
+	@if $attachment != null {
+		background-attachment: $attachment;
 	}
 }

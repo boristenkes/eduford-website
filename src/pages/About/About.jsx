@@ -34,7 +34,6 @@ export default function About() {
 					<img src={meeting} alt='Meeting' />
 				</div>
 			</section>
-			<Footer />
 		</>
 	);
 }

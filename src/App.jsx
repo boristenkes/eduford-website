@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { /*useEffect,*/ useState } from 'react';
 import { Loader, Navbar, ScrollToTop } from './components';
 import { Route, Routes } from 'react-router-dom';
 import { About, Blog, Contact, Course, Home } from './pages';
@@ -7,22 +7,26 @@ import { Footer } from './containers';
 export default function App() {
 	const [isLoading, setIsLoading] = useState(true);
 
-	useEffect(() => {
-		const observer = new PerformanceObserver(list => {
-			const entries = list.getEntries();
+	// useEffect(() => {
+	// 	const observer = new PerformanceObserver(list => {
+	// 		const entries = list.getEntries();
 
-			const entry = entries.find(entry => entry.entryType === 'navigation');
+	// 		const entry = entries.find(entry => entry.entryType === 'navigation');
 
-			const loadTime = entry.duration;
+	// 		const loadTime = entry.duration;
 
-			setTimeout(() => {
-				setIsLoading(false);
-			}, loadTime);
-		});
-		observer.observe({ type: 'navigation' });
+	// 		setTimeout(() => {
+	// 			setIsLoading(false);
+	// 		}, loadTime);
+	// 	});
+	// 	observer.observe({ type: 'navigation' });
 
-		return () => observer.disconnect();
-	}, []);
+	// 	return () => observer.disconnect();
+	// }, []);
+
+	setTimeout(() => {
+		setIsLoading(false);
+	}, 500);
 
 	return (
 		<>

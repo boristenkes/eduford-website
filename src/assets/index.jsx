@@ -1,17 +1,17 @@
-import meeting from './about.jpg';
-import graduation from './background.jpg';
-import homeBanner from './banner.png';
-import classroom from './banner2.jpg';
-import basketball from './basketball.png';
-import cafeteria from './cafeteria.png';
-import certificate from './certificate.jpg';
-import library from './library.png';
-import logo from './logo.png';
-import london from './london.png';
-import newyork from './newyork.png';
-import washington from './washington.png';
-import christine from './avatar-christine.jpg';
-import david from './avatar-david.jpg';
+import meeting from './about.webp';
+import graduation from './background.webp';
+import homeBanner from './banner.webp';
+import classroom from './classroom.webp';
+import basketball from './basketball.webp';
+import cafeteria from './cafeteria.webp';
+import certificate from './certificate.webp';
+import library from './library.webp';
+import logo from './logo.webp';
+import london from './london.webp';
+import newyork from './newyork.webp';
+import washington from './washington.webp';
+import christine from './avatar-christine.webp';
+import david from './avatar-david.webp';
 
 export const campus = {
 	london: london,

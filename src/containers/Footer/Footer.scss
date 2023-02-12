@@ -12,9 +12,9 @@
 		font-size: 1.25rem;
 	}
 	p {
-		--max-width: 60ch;
 		margin-inline: auto;
 		text-align: center;
+		color: var(--clr-neutral-500);
 	}
 	.social-icons {
 		display: flex;

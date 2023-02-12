@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const Banner = styled.section`
+const Banner = styled.header`
 	background-image: linear-gradient(rgba(2 2 2 / 0.65), rgba(2 2 2 / 0.65)),
 		url(${props => props.bgImg});
 	background-size: cover;
@@ -12,8 +12,9 @@ const Banner = styled.section`
 	text-align: center;
 
 	h1 {
+		--min-fs: 2.25rem;
+		--max-fs: 3rem;
 		color: var(--clr-neutral-100);
-		font-size: 2.75rem;
 	}
 
 	${props =>

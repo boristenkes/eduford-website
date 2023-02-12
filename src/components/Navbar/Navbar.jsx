@@ -13,8 +13,8 @@ export default function Navbar() {
 	const [isOpen, setOpen] = useState(false);
 
 	return (
-		<div className='navbar'>
-			<Link to='/' className='navbar-logo-wrapper'>
+		<header className='navbar'>
+			<Link to='/' className='navbar-logo-wrapper' aria-label='Home'>
 				{isVerySmallScreen ? (
 					<LogoIcon className='navbar-logo-icon' />
 				) : (
@@ -25,15 +25,15 @@ export default function Navbar() {
 				className={`navbar-nav ${isDesktop ? 'desktop' : 'mobile'} ${
 					isOpen ? 'active' : ''
 				}`}
-				aria-expanded={isOpen}
+				aria-hidden={isDesktop ? false : !isOpen}
 			>
 				<ul className='navbar-list'>
 					{navLinks.map((link, index) => (
 						<CustomLink
 							key={`nav-link-${index + 1}`}
-							aria-hidden={!isOpen}
 							onClick={() => setOpen(false)}
 							to={link.to}
+							{...(!isOpen && !isDesktop ? { tabIndex: -1 } : {})}
 						>
 							{link.title}
 						</CustomLink>
@@ -50,7 +50,7 @@ export default function Navbar() {
 					toggle={setOpen}
 				/>
 			)}
-		</div>
+		</header>
 	);
 }
 

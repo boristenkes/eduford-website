@@ -4,18 +4,15 @@ import './Blog.scss';
 import { Banner, Button } from '../../components';
 import { banners, certificate } from '../../assets';
 import { categories } from '../../constants';
-import { Footer } from '../../containers';
 
 export default function Blog() {
 	return (
 		<>
-			<section>
-				<Banner bgImg={banners.blog}>
-					<h1 className='head-text'>
-						Our Certificate And Programs For {new Date().getFullYear()}
-					</h1>
-				</Banner>
-			</section>
+			<Banner bgImg={banners.blog}>
+				<h1 className='head-text'>
+					Our Certificate And Programs For {new Date().getFullYear()}
+				</h1>
+			</Banner>
 
 			<section className='blog | container section-padding'>
 				<div className='blog-left'>

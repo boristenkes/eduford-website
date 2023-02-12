@@ -1,7 +1,11 @@
 @use '../abstracts/' as *;
 
 .head-text {
-	font-size: 2.25rem; // min 1.25rem
+	font-size: clamp(
+		var(--min-fs, 1.75rem),
+		var(--preferred-fs, 5vw),
+		var(--max-fs, 2.25rem)
+	);
 	font-family: var(--ff-heading);
 	font-weight: var(--fw-semibold);
 	color: var(--clr-neutral-900);
@@ -10,7 +14,7 @@
 
 .body-text {
 	font-family: var(--ff-body);
-	color: var(--clr-neutral-500);
+	color: var(--clr-neutral-700);
 	width: min(60ch, 100% - 1rem);
 }
 
@@ -27,7 +31,7 @@
 .section-subtitle {
 	font-family: var(--ff-body);
 	font-size: 1rem;
-	color: var(--clr-neutral-500);
+	color: var(--clr-neutral-700);
 	width: min(var(--max-width, 60ch), 100% - 1rem);
 	text-align: center;
 	margin-inline: auto;

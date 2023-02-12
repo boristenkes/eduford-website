@@ -4,16 +4,13 @@ import './Contact.scss';
 import { Banner, Button } from '../../components';
 import { banners } from '../../assets';
 import { contactInfo } from '../../constants';
-import { Footer } from '../../containers';
 
 export default function Contact() {
 	return (
 		<>
-			<section>
-				<Banner bgImg={banners.contact}>
-					<h1 className='head-text'>Contact Us</h1>
-				</Banner>
-			</section>
+			<Banner bgImg={banners.contact}>
+				<h1 className='head-text'>Contact Us</h1>
+			</Banner>
 			<section className='container section-padding'>
 				<iframe
 					src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22198.243598212957!2d20.41474155!3d45.935687699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1676021066632!5m2!1ssr!2srs'

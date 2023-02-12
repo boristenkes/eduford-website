@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.scss';
 
-import { Footer } from '../../containers';
 import { Banner, Button } from '../../components';
 import { banners } from '../../assets';
 import { meeting } from '../../assets';

@@ -2,6 +2,7 @@ import React from 'react';
 import './Campus.scss';
 
 import { locations } from '../../constants';
+import { FadeIn } from '../../components';
 
 export default function Campus() {
 	return (
@@ -12,7 +13,7 @@ export default function Campus() {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</p>
 
-				<ul className='campus-list'>
+				<FadeIn selectChildren tag='ul' className='campus-list'>
 					{locations.map((campus, index) => (
 						<li
 							key={`campus-${index + 1}`}
@@ -22,7 +23,7 @@ export default function Campus() {
 							<h3 className='campus-location'>{campus.location}</h3>
 						</li>
 					))}
-				</ul>
+				</FadeIn>
 			</div>
 		</section>
 	);

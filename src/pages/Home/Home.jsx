@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 
-import { Button, CTA, Banner } from '../../components';
+import { Button, CTA, Banner, FadeIn } from '../../components';
 import { Courses, Campus, Facilities, Testimonials } from '../../containers';
 import { Link } from 'react-router-dom';
 import { banners } from '../../assets';

@@ -7,6 +7,7 @@ import {
 
 import './Testimonials.scss';
 import { testimonials } from '../../constants';
+import { FadeIn } from '../../components';
 
 export default function Testimonials() {
 	return (
@@ -17,7 +18,7 @@ export default function Testimonials() {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</p>
 			</div>
-			<ul className='testimonials-list'>
+			<FadeIn selectChildren className='testimonials-list'>
 				{testimonials.map((testimonial, index) => (
 					<li className='testimonials-item' key={`testimonial-${index + 1}`}>
 						<img src={testimonial.avatar} alt={testimonial.name} />
@@ -28,7 +29,7 @@ export default function Testimonials() {
 						</div>
 					</li>
 				))}
-			</ul>
+			</FadeIn>
 		</section>
 	);
 }

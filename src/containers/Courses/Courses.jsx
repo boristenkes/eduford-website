@@ -2,6 +2,7 @@ import React from 'react';
 import './Courses.scss';
 
 import { courses } from '../../constants';
+import { FadeIn } from '../../components';
 
 export default function Courses() {
 	return (
@@ -13,14 +14,19 @@ export default function Courses() {
 				</p>
 			</div>
 
-			<ul className='course-list'>
+			<FadeIn
+				selectChildren={true}
+				tag='ul'
+				offset='2vh'
+				className='course-list'
+			>
 				{courses.map((course, index) => (
 					<li className='course' key={`course-${index + 1}`}>
 						<h3 className='course-title'>{course.title}</h3>
 						<p className='course-desc | body-text'>{course.desc}</p>
 					</li>
 				))}
-			</ul>
+			</FadeIn>
 		</section>
 	);
 }

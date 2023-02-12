@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.scss';
 
-import { Banner, Button } from '../../components';
+import { Banner, Button, FadeIn } from '../../components';
 import { banners } from '../../assets';
 import { meeting } from '../../assets';
 import { useMediaQuery } from 'react-responsive';
@@ -14,7 +14,7 @@ export default function About() {
 				<h1 className='head-text'>About Us</h1>
 			</Banner>
 			<section className='about | container even-columns section-padding'>
-				<div>
+				<FadeIn from='left'>
 					<h2 className='head-text'>
 						We are the world's largest{isDesktop && <br />} university
 					</h2>
@@ -28,10 +28,10 @@ export default function About() {
 						dolores non, id quis?
 					</p>
 					<Button inverted>Explore Now</Button>
-				</div>
-				<div>
+				</FadeIn>
+				<FadeIn from='right'>
 					<img src={meeting} alt='Meeting' />
-				</div>
+				</FadeIn>
 			</section>
 		</>
 	);

@@ -2,6 +2,7 @@ import React from 'react';
 import './Facilities.scss';
 
 import { facilities } from '../../constants';
+import { FadeIn } from '../../components';
 
 export default function Facilities() {
 	return (
@@ -12,7 +13,7 @@ export default function Facilities() {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</p>
 			</div>
-			<ul className='facilities-list'>
+			<FadeIn selectChildren tag='ul' className='facilities-list'>
 				{facilities.map((facility, index) => (
 					<li className='facilities-item' key={`facility-${index + 1}`}>
 						<div className='img-wrapper'>
@@ -22,7 +23,7 @@ export default function Facilities() {
 						<p>{facility.content}</p>
 					</li>
 				))}
-			</ul>
+			</FadeIn>
 		</section>
 	);
 }

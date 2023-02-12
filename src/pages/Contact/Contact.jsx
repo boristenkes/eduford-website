@@ -26,7 +26,7 @@ export default function Contact() {
 			</section>
 
 			<section className='contact | container section-padding even-columns'>
-				<FadeIn from='left' className='contact-info'>
+				<FadeIn className='contact-info'>
 					<ul className='contact-info-list'>
 						{contactInfo.map((info, index) => (
 							<li
@@ -43,7 +43,7 @@ export default function Contact() {
 					</ul>
 				</FadeIn>
 
-				<FadeIn from='right' className='contact-form'>
+				<FadeIn className='contact-form'>
 					<input type='text' placeholder='Enter your name' />
 					<input type='email' placeholder='Enter your email address' />
 					<input type='text' placeholder='Enter your subject' />

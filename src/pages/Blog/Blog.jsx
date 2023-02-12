@@ -16,7 +16,7 @@ export default function Blog() {
 
 			<section className='blog | container section-padding'>
 				<div className='blog-left'>
-					<FadeIn from='left'>
+					<FadeIn>
 						<img
 							className='blog-left-img'
 							src={certificate}
@@ -70,7 +70,7 @@ export default function Blog() {
 					</FadeIn>
 				</div>
 
-				<FadeIn from='right' className='blog-right'>
+				<FadeIn className='blog-right'>
 					<h2 className='blog-right-title | head-text'>Post Categories</h2>
 					<ul className='blog-right-categories'>
 						{categories.map((category, index) => (

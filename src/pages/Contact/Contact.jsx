@@ -26,8 +26,8 @@ export default function Contact() {
 			</section>
 
 			<section className='contact | container section-padding even-columns'>
-				<FadeIn className='contact-info'>
-					<ul className='contact-info-list'>
+				<div className='contact-info'>
+					<FadeIn tag='ul' selectChildren className='contact-info-list'>
 						{contactInfo.map((info, index) => (
 							<li
 								className='contact-info-item'
@@ -40,10 +40,10 @@ export default function Contact() {
 								</div>
 							</li>
 						))}
-					</ul>
-				</FadeIn>
+					</FadeIn>
+				</div>
 
-				<FadeIn className='contact-form'>
+				<FadeIn selectChildren className='contact-form'>
 					<input type='text' placeholder='Enter your name' />
 					<input type='email' placeholder='Enter your email address' />
 					<input type='text' placeholder='Enter your subject' />

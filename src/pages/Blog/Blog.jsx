@@ -16,7 +16,7 @@ export default function Blog() {
 
 			<section className='blog | container section-padding'>
 				<div className='blog-left'>
-					<FadeIn>
+					<FadeIn threshold={0}>
 						<img
 							className='blog-left-img'
 							src={certificate}
@@ -24,7 +24,7 @@ export default function Blog() {
 						/>
 					</FadeIn>
 
-					<FadeIn selectChildren threshold={1} className='blog-left-content'>
+					<FadeIn selectChildren threshold={0.7} className='blog-left-content'>
 						<h2 className='blog-left-title | head-text'>
 							Our Certificate & Online Programs for {new Date().getFullYear()}
 						</h2>
@@ -70,7 +70,7 @@ export default function Blog() {
 					</FadeIn>
 				</div>
 
-				<FadeIn className='blog-right'>
+				<FadeIn threshold={0.1} className='blog-right'>
 					<h2 className='blog-right-title | head-text'>Post Categories</h2>
 					<ul className='blog-right-categories'>
 						{categories.map((category, index) => (

@@ -16,8 +16,9 @@ export default function Courses() {
 
 			<FadeIn
 				selectChildren={true}
+				offset='50%'
+				threshold={0.5}
 				tag='ul'
-				offset='2vh'
 				className='course-list'
 			>
 				{courses.map((course, index) => (

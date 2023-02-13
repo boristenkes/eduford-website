@@ -8,8 +8,8 @@ export default function FadeIn({
 	tag = 'div',
 	className,
 	triggerOnce = true,
-	duration = 200,
-	offset,
+	delay = 200,
+	offset = '20vh',
 	selectChildren,
 	threshold = 0.3,
 	style,
@@ -20,7 +20,7 @@ export default function FadeIn({
 		triggerOnce: triggerOnce,
 	});
 	const [isVisible, setVisible] = useState(false);
-	const maxDelay = React.Children.toArray(children).length * duration;
+	const maxDelay = React.Children.toArray(children).length * delay;
 
 	useEffect(() => {
 		setVisible(inView);
@@ -42,8 +42,8 @@ export default function FadeIn({
 					'data-direction': from,
 					style: {
 						...child.props.style,
-						'--offset': offset || '20vh',
-						transitionDelay: !isVisible ? '0ms' : index * duration + 'ms',
+						'--offset': offset,
+						transitionDelay: (!isVisible ? 0 : index * delay) + 'ms',
 					},
 				});
 			})}

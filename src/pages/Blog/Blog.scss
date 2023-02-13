@@ -32,7 +32,7 @@
 		}
 		&-form {
 			display: grid;
-			@include separate-children(1.5rem);
+			gap: 2rem;
 
 			input,
 			textarea {

@@ -12,8 +12,7 @@ export default function CTA() {
 		<FadeIn>
 			<section className='cta | container section-padding'>
 				<h2 className='head-text'>
-					Enroll For Our Various Online Courses
-					{!isPhone && <br />}
+					Enroll For Our Various Online Courses {!isPhone && <br />}
 					Anywhere From The World
 				</h2>
 				<Link to='/contact'>

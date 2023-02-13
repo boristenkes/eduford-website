@@ -10,7 +10,7 @@ export default function FadeIn({
 	triggerOnce = true,
 	delay = 200,
 	offset = '20vh',
-	selectChildren,
+	selectChildren = false,
 	threshold = 0.3,
 	style,
 	...props
@@ -35,8 +35,8 @@ export default function FadeIn({
 		<Tag ref={ref} className={className} {...props}>
 			{React.Children.map(children, (child, index) => {
 				return React.cloneElement(child, {
-					key: index + 1,
-					className: `${child.props.className} fade-in ${
+					key: 'fade-in-' + index + 1,
+					className: `${child.props.className || ''} fade-in ${
 						inView ? 'is-visible' : ''
 					}`,
 					'data-direction': from,
@@ -50,7 +50,7 @@ export default function FadeIn({
 		</Tag>
 	) : (
 		<Tag
-			className={`${className} fade-in ${inView ? 'is-visible' : ''}`}
+			className={`${className || ''} fade-in ${inView ? 'is-visible' : ''}`}
 			ref={ref}
 			data-direction={from}
 			{...props}

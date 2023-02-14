@@ -7,7 +7,9 @@ import { Footer } from './containers';
 export default function App() {
 	const [isLoading, setIsLoading] = useState(true);
 
-	window.addEventListener('load', () => setIsLoading(false), false);
+	setTimeout(() => {
+		setIsLoading(false);
+	}, 500);
 
 	return (
 		<>

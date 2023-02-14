@@ -16,7 +16,7 @@ export default function Blog() {
 
 			<section className='blog | container section-padding'>
 				<div className='blog-left'>
-					<FadeIn from='left' threshold={0}>
+					<FadeIn threshold={0}>
 						<img
 							className='blog-left-img'
 							src={certificate}

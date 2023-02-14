@@ -14,7 +14,7 @@ export default function About() {
 				<h1 className='head-text'>About Us</h1>
 			</Banner>
 			<section className='about | container even-columns section-padding'>
-				<FadeIn from='left'>
+				<FadeIn>
 					<h2 className='head-text'>
 						We are the world's largest{isDesktop && <br />} university
 					</h2>
@@ -29,7 +29,7 @@ export default function About() {
 					</p>
 					<Button inverted>Explore Now</Button>
 				</FadeIn>
-				<FadeIn from='right'>
+				<FadeIn>
 					<img src={meeting} alt='Meeting' />
 				</FadeIn>
 			</section>

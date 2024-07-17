@@ -13,8 +13,8 @@ export default function Home() {
 				<div className='hero-wrapper'>
 					<h1 className='hero-title | head-text'>World's Biggest University</h1>
 					<p className='hero-description | body-text text-center mx-auto'>
-						Making website is now one of the easiest things in the world. You
-						just need to learn HTML, CSS, Javascipt and you are good to go.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, 
+						a labore. Vitae esse doloremque recusandae, quis libero ipsa cum.
 					</p>
 					<Link to='/contact'>
 						<Button className='hero-button'>Visit us to Know More</Button>

@@ -1,9 +1,9 @@
-import React from 'react';
-import './Contact.scss';
+import React from 'react'
+import './Contact.scss'
 
-import { Banner, Button, FadeIn } from '../../components';
-import { banners } from '../../assets';
-import { contactInfo } from '../../constants';
+import { banners } from '../../assets'
+import { Banner, Button, FadeIn } from '../../components'
+import { contactInfo } from '../../constants'
 
 export default function Contact() {
 	return (
@@ -21,13 +21,17 @@ export default function Contact() {
 						allowFullScreen=''
 						loading='lazy'
 						referrerPolicy='no-referrer-when-downgrade'
-					></iframe>
+					/>
 				</FadeIn>
 			</section>
 
 			<section className='contact | container section-padding even-columns'>
 				<div className='contact-info'>
-					<FadeIn tag='ul' selectChildren className='contact-info-list'>
+					<FadeIn
+						tag='ul'
+						selectChildren
+						className='contact-info-list'
+					>
 						{contactInfo.map((info, index) => (
 							<li
 								className='contact-info-item'
@@ -43,16 +47,31 @@ export default function Contact() {
 					</FadeIn>
 				</div>
 
-				<FadeIn selectChildren className='contact-form'>
-					<input type='text' placeholder='Enter your name' />
-					<input type='email' placeholder='Enter your email address' />
-					<input type='text' placeholder='Enter your subject' />
+				<FadeIn
+					selectChildren
+					className='contact-form'
+				>
+					<input
+						type='text'
+						placeholder='Enter your name'
+					/>
+					<input
+						type='email'
+						placeholder='Enter your email address'
+					/>
+					<input
+						type='text'
+						placeholder='Enter your subject'
+					/>
 					<textarea placeholder='Message' />
-					<Button inverted type='submit'>
+					<Button
+						inverted
+						type='submit'
+					>
 						Send Message
 					</Button>
 				</FadeIn>
 			</section>
 		</>
-	);
+	)
 }

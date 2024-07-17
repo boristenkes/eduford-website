@@ -14,13 +14,13 @@ export default function Contact() {
 			<section className='container section-padding'>
 				<FadeIn>
 					<iframe
-						src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22198.243598212957!2d20.41474155!3d45.935687699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1676021066632!5m2!1ssr!2srs'
+						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929769.9994394854!2d18.271434658255668!3d44.18433396455311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47571ddff2898095%3A0x55e50ea3723865d!2z0KHRgNCx0LjRmNCw!5e0!3m2!1ssr!2srs!4v1721214056359!5m2!1ssr!2srs'
 						width='100%'
 						height='650'
 						style={{ border: 0 }}
-						allowFullScreen=''
+						allowfullscreen=''
 						loading='lazy'
-						referrerPolicy='no-referrer-when-downgrade'
+						referrerpolicy='no-referrer-when-downgrade'
 					/>
 				</FadeIn>
 			</section>
